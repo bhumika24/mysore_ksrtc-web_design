@@ -1,0 +1,254 @@
+<html>
+<head>
+<meta name="viewport"
+content="width=device-width, intial-scale=1">
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+  
+    <script src='http://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <img src="logo.png" style="float:left;margin-left:20px;"alt="logo" height="90px" width="100px">
+         <h3 style="margin-left:10%;margin-top:15px; color: black;">ಕರ್ನಾಟಕ ರಾಜ್ಯ ರಸ್ತೆ ಸಾರಿಗೆ ನಿಗಮ <br>Karnataka State Road Transport Corporation<br>Digital Transportation System For Mysuru</h3><br>
+    
+   <div style="background-color:rgb(0,0,0,0.7);height:55px;margin-bottom:20px;">
+<a type="button" id="astext" class="open-button" onclick="openForm()" style="margin-left:32%;font-size:150%;text-align:center;"><b><span class="glyphicon glyphicon-cloud-download" style="font-size: 20px;margin-right:5px;margin-bottom: 10px;"></span>Download PDF</b></a>
+<a  type="button" id="astext" class="open-button" onclick="oForm()" style="margin-left:3%; font-size:150%;"><b><i class="fa fa-envelope" style="font-size:20px;color:blue; margin-right:5px;"></i>Email PDF</b></a>
+<input type="image"src="user.jpg" width="50" height="45" onclick="opForm()" style="float:right;border-radius: 50%;margin-right: 3px;margin-top: 5px;">
+
+</div>
+   <div class="form-popup" id="myForm">
+  <div action="/action_page.php" class="form-container">
+    <h4 style="color:white;margin-top: 40px;">PDF report has been downloaded</h4>
+   <button type="button" class="btn cancel" onclick="closeForm()">OK</button>
+       </div>
+</div>
+    
+   
+ <div class="form-popup" id="Form">
+  <form action="/action_page.php" class="form-container">
+    <h4 style="color:white;">Please enter emailid to send PDF</h4>
+ <label style="color:white;margin-left:10px;"for="email"><b>Email</b></label>
+    <input  style="margin-left:10px;" type="email" placeholder="Enter Email" name="email" required> 
+      <input style="margin-left:48px;margin-top:13px;" type="checkbox" id="pdf" name="pdf" value="pdf"><label  style="color:white;margin-left: 3px;" for="pdf">Pdf attached</label>
+    <button style="font-size:12px;" type="button" class="btn cancel" onclick="cForm()">Send Email</button>
+  </form>
+    
+    </div>
+    
+    <div class="form-pop" id="userForm">
+  <form action="/action_page.php" class="form-contain">
+      
+    <h4 style="color:white;">User</h4>
+            <img src="user.jpg" width="100" height="100" style="float:right;margin-right: 30px;">
+
+    <h3  style="color:white;">Name:  Lavanya Rajappa</h3>
+    <h3  style="color:white;">Role:  Admin</h3>
+    <h3  style="color:white;">Email: Lavanya@ksrtc.com</h3>
+    <h3  style="color:white;">Phone: 9876543210</h3>  
+ <button type="button" class="btn canc" onclick="opnForm()">Edit</button>
+ <button type="button" class="btn canc" onclick="document.location='index.html'">Logout</button>
+    <button type="button" class="btn canc" onclick="clForm()">Cancel</button>
+  </form>
+</div>
+    
+    
+     <div class="form-pop" id="editForm">
+  <form action="/action_page.php" class="form-contain">
+      
+    <h4  style="color:white;">User</h4>
+            <img src="user.jpg" width="100" height="100" style="float:right;margin-right: 30px;">
+
+    <label style="color:white;margin-top:1px;" for="name"><b>Name</b></label>
+    <input style="margin-top:10px;height:25px;" type="text" placeholder="Enter Name" name="name" required><br>
+      
+    <label for="Role"><b>Role</b></label>&nbsp&nbsp
+    <input style="margin-top:20px;height:25px;" type="text" placeholder="Enter Role" name="role" required><br>
+
+    <label for="email"><b>Email</b></label>
+    <input style="margin-top:20px;height:25px;"type="text" placeholder="Enter Email" name="email" required><br>
+
+    <label for="phn"><b>Phone</b></label>
+    <input style="margin-top:20px;height:25px;" type="text" placeholder="Enter Phone number" name="phn" required><br>
+   
+ <button type="button" class="btn canc" >Save</button>
+    <button style="margin-left: 250px;"type="button" class="btn canc" onclick="clsForm()">Cancel</button>
+  </form>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+<table>
+<tr >
+<th>Route</th>
+<th>Total Trip</th>
+<th>Origin</th>
+<th>Last Dispatch</th>
+<th>Diff</th>
+<th>Frequency</th>
+</tr>
+<tr>
+<td >201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr><tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+<tr>
+<td>201</td>
+<td>68</td>
+<td>city bus stand-pf 23</td>
+<td>2020-02-07 09:06:24</td>
+<td>00:06:25</td>
+<td>14</td>
+</tr>
+</table>
+</div>
+    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+        function oForm() {
+  document.getElementById("Form").style.display = "block";
+}
+
+function cForm() {
+  document.getElementById("Form").style.display = "none";
+}
+           function opForm() {
+  document.getElementById("userForm").style.display = "block";
+}
+
+function clForm() {
+  document.getElementById("userForm").style.display = "none";
+}
+        
+        
+         function opnForm() {
+  document.getElementById("editForm").style.display = "block";
+}
+
+function clsForm() {
+  document.getElementById("editForm").style.display = "none";
+}        
+        
+        
+</script>
+
+    
+    
+    
+</body>
+
+</html>
